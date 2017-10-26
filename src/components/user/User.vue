@@ -14,7 +14,7 @@
         methods: {
             navigateToHome(){
                 this.$router.push({
-                    path: '/'
+                    name: 'home'
                 });
             }
         }
