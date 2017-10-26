@@ -6,7 +6,8 @@ import {routes} from './routes';
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-    routes
+    routes,
+    mode: 'history' //默认的是hash
 });
 
 new Vue({
