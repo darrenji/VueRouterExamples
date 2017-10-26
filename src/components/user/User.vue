@@ -2,8 +2,9 @@
     <div>
         <h1>The Use Page</h1>
         <hr>
-        <p>Loaded ID is: {{id}}</p>
         <button @click="navigateToHome" class="btn btn-primary">Go to Home</button>
+        <hr>
+        <router-view></router-view>
     </div>
 </template>
 
@@ -15,16 +16,6 @@
                 this.$router.push({
                     path: '/'
                 });
-            }
-        },
-        data(){
-            return {
-                id: this.$route.params.id
-            }
-        },
-        watch: {
-            '$route'(to, from) {
-                this.id = to.params.id;
             }
         }
     }
