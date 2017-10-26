@@ -2,7 +2,7 @@
     <div>
         <h1>The Use Page</h1>
         <hr>
-        <p>Loaded ID: {{id}}</p>
+        <p>Loaded ID is: {{id}}</p>
         <button @click="navigateToHome" class="btn btn-primary">Go to Home</button>
     </div>
 </template>
