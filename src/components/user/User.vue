@@ -2,6 +2,7 @@
     <div>
         <h1>The Use Page</h1>
         <hr>
+        <p>Loaded ID: {{id}}</p>
         <button @click="navigateToHome" class="btn btn-primary">Go to Home</button>
     </div>
 </template>
@@ -15,6 +16,12 @@
                     path: '/'
                 });
             }
+        },
+        data(){
+            return {
+                id: this.$route.params.id
+            }
         }
+        
     }
 </script>
