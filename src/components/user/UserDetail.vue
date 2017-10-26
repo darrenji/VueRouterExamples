@@ -21,6 +21,15 @@
                     hash: '#data'
                 }
             }
+        },
+        beforeRouteEnter(to, from, next){
+            //在外面不能获取this.link
+            //这样获取：next(vm => {vm.link});
+//            if(true){
+//                next();
+//            } else {
+//                next(false);
+//            }
         }
     }
 </script>
