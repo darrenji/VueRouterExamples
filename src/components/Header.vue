@@ -1,6 +1,6 @@
 <template>
     <ul class="nav nav-pills">
-        <li role="presentation"><router-link to="/">Home</router-link></li>
-        <li role="presentation"><router-link to="/user">User</router-link></li>
+        <router-link to="/" tag="li" activ-class="active" exact><a>Home</a></router-link>
+        <router-link to="/user" tag="li"><a>User</a></router-link>
     </ul>
 </template>
